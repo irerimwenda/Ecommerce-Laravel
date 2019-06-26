@@ -50,10 +50,6 @@
                         </article>
                     </div>
                 </div>
-                <script src="{{ asset('js/jquery.wmuSlider.js') }}"></script>
-                <script>
-                    $('.example1').wmuSlider();         
-                </script>
             </div>
             <div class="col-md-5 w3agile_special_deals_grid_right">
                 <img src="images/20.jpg" alt=" " class="img-responsive" />

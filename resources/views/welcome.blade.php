@@ -1,7 +1,10 @@
 @extends('layouts.main')
 
 @section('content')
+<!-- START OF PAGE CONTENT -->
 
+
+<!-- END OF PAGE CONTENT -->
 @endsection()
 
 @section('scripts')
