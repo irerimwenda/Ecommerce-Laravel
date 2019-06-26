@@ -2,8 +2,9 @@
 <div class="header" id="home1">
     <div class="container">
         <div class="w3l_login">
-            <a href="#" data-toggle="modal" data-target="#myModal88"><span class="glyphicon glyphicon-user"
-                    aria-hidden="true"></span></a>
+            <a href="{{ route('login') }}">
+                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+            </a>
         </div>
         <div class="w3l_logo">
             <h1><a href="index.html">Electronic Store<span>Your stores. Your place.</span></a></h1>
