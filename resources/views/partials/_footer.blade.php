@@ -7,9 +7,15 @@
 <script type="text/javascript" src="{{ asset('js/bootstrap-3.1.1.min.js') }}"></script>
 <!-- //for bootstrap working -->
 
+<!-- pop-up-box -->     
+<script type="text/javascript" src="{{ asset('js/jquery.magnific-popup.js') }}"></script>
+<!--//pop-up-box -->
+
 <!-- scripts -->
-<script src="{{ asset('js/custom.js') }}"></script>
-<script src="{{ asset('js/jquery.wmuSlider.js') }}"></script>
-<script src="{{ asset('js/jquery.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/custom.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/jquery.wmuSlider.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/jquery.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/jquery.flexisel.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/jquery.countdown.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/script.js') }}"></script>
 <!-- //end-scripts -->

@@ -3,9 +3,11 @@
 @section('content')
 <!-- START OF PAGE CONTENT -->
 
+<!-- Check the main layout for all the includes in their order. Includes are in the partials folder. -->
 
 <!-- END OF PAGE CONTENT -->
 @endsection()
+
 
 @section('scripts')
 
@@ -22,7 +24,7 @@
 
 <!-- cart-js -->
 <script src="{{ asset('js/minicart.js') }}"></script>
-<script>
+<script type="text/javascript">
     w3ls.render();
 
     w3ls.cart.on('w3sb_checkout', function (evt) {

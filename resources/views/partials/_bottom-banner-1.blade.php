@@ -12,8 +12,6 @@
             <div class="timer_wrap">
                 <div id="counter"> </div>
             </div>
-            <script src="{{ asset('js/jquery.countdown.js') }}"></script>
-            <script src="{{ asset('js/script.js') }}"></script>
         </div>
 
         <div class="clearfix"> </div>
