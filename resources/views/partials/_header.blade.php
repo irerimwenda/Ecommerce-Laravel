@@ -16,7 +16,7 @@
             <div class="search_form">
                 <form action="#" method="post">
                     <input type="text" name="Search" placeholder="Search...">
-                    <input type="submit" value="Send">
+                    <!--<input type="submit" value="Send">-->
                 </form>
             </div>
         </div>

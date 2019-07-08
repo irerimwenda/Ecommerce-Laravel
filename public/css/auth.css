@@ -1,4 +1,7 @@
-/* Common */
+/*======================================================
+            COMMON
+    ======================================================*/
+
 html, body {
     background-color: #F2F3F4 !important;
     margin: 0;
@@ -6,50 +9,27 @@ html, body {
     font-size: 100%;
 }
 
-/* Login Form */
-.login-form{
-    /*background-color: #fff;*/
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 30px 25px;
-    border-radius: 10px;
-    width: 50%; 
+/* Add padding to containers */
+.container {
+  padding: 16px;
 }
 
-/* Register Form */
-.register-form{
-  /*background-color: #fff;*/
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 30px 25px;
-  border-radius: 10px;
-  width: 50%; 
+.labels {
+    font-family: 'Nunito', sans-serif;
 }
 
-/* Card form */
-form {
-    background-color: #fff;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    border-radius: 10px;
-  }
-  
-  /* Full-width inputs */
-  input[type=text], input[type=password] {
+/* Full-width inputs */
+input[type=text], input[type=password] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
-  }
-  
-  /* Set a style for all buttons */
-  button {
+}
+
+/* Set a style for all buttons */
+button {
     background-color: #4CAF50;
     color: white;
     padding: 14px 20px;
@@ -57,51 +37,176 @@ form {
     border: none;
     cursor: pointer;
     width: 100%;
-  }
-  
-  /* Add a hover effect for buttons */
-  button:hover {
+}
+
+/* Add a hover effect for buttons */
+button:hover {
     opacity: 0.8;
-  }
-  
-  /* Extra style for the cancel button (red) */
-  .registerbtn {
-    width: auto;
-    padding: 10px 18px;
-    background-color: blue;
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  /* Center the avatar image inside this container */
-  .imgcontainer {
-    text-align: center;
-    margin: 24px 0 12px 0;
-  }
-  
-  /* Avatar image */
-  img.avatar {
-    width: 40%;
-    border-radius: 50%;
-  }
-  
-  /* Add padding to containers */
-  .container {
-    padding: 16px;
-  }
-  
-  /* The "Forgot password" text */
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form-control-error{
+  color: red;
+}
+
+/*======================================================
+            LOGIN VIEW
+    ======================================================*/
+
+    /* Header-Navbar */
+.header{
+  top:0;
+  position: fixed;
+  height: 7%;
+  background-color: #3c43a4;
+  width: 100%;
+  text-align: center;
+}
+
+.flex-center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  line-height: inherit;
+  vertical-align: middle;
+}
+
+.flex-center p{
+  padding-left: 40px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.flex-center a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.flex-center a:active a:visited{
+  color: #7F8C8D;
+}
+
+.flex-center a:hover{
+  text-decoration: underline;
+}
+
+/* Split screen in half */
+.split {
+    height: 93%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 7%;
+    overflow-x: hidden;
+}
+
+/*  Left Side */
+.left {
+    left: 0;
+    background-color: rgb(174, 212, 173);
+}
+
+.image {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.login-img {
+  transition: transform 0.5s linear;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Right Side */
+.right {
+    right: 0;
+    background-color: #fff;
+}
+
+/* Login Form */
+.login-form{
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.small-margin {
+    margin:15px 0;
+}
+
+.line-separator{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: left;
+  margin: 5px 0;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
   span.psw {
-    float: right;
+    display: block;
+    float: none;
   }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+.login-btn {
+  margin:15px 0;
+}
+
+.register-btn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: blue;
+  color: #fff;
+  text-decoration: none;
+}
+
+/*======================================================
+            REGISTRATION VIEW
+    ======================================================*/
+
+/* Register Form */
+.register-form{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    width: 35%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background: #fff;
+    border-radius: 16px;
+}
+
+
   
-  /* Change styles for span and cancel button on extra small screens */
-  @media screen and (max-width: 300px) {
-    span.psw {
-      display: block;
-      float: none;
-    }
-    .cancelbtn {
-      width: 100%;
-    }
-  }
+  
+  
+  
+  
+  
+  
+
+  
+  
+  

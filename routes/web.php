@@ -12,8 +12,12 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('pages.welcome');
+})->name('welcome');
+
+Route::get('/products', 'PagesController@getProducts')->name('products');
+Route::get('/contact', 'PagesController@getContact')->name('contact');
+Route::get('/about', 'PagesController@getAbout')->name('about');
 
 Auth::routes();
 

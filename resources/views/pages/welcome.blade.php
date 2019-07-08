@@ -3,7 +3,18 @@
 @section('content')
 <!-- START OF PAGE CONTENT -->
 
-<!-- Check the main layout for all the includes in their order. Includes are in the partials folder. -->
+<!-- Check the main layout for the default template includes in their order. Includes are in the partials folder. -->
+
+<!-- Welcome Page Includes -->
+@include('partials._banner')
+@include('partials._bottom-banner')
+@include('partials._bottom-banner-1')
+@include('partials._special-deals')
+@include('partials._new-products')
+@include('partials._top-brands')
+@include('partials._newsletter')
+@include('partials._footer-section')
+<!--// End of Page Includes -->
 
 <!-- END OF PAGE CONTENT -->
 @endsection()
